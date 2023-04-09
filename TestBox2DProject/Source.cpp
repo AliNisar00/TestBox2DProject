@@ -1,5 +1,8 @@
+#include <iostream>
 #include <stdio.h>
 #include <box2d.h>
+
+using namespace std;
 
 int main() {
 
@@ -7,7 +10,6 @@ int main() {
 	b2Vec2 gravity(0.0f, -10.0f);
 
 	b2World world(gravity);
-
 
 	// creating a Ground Box - a static body
 	b2BodyDef groundBodyDef;
