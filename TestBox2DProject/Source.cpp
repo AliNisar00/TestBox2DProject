@@ -11,7 +11,7 @@ int main() {
 
 	b2World world(gravity);
 
-	// creating a Ground Box - a static body
+	// creating a ground box - a static body
 	b2BodyDef groundBodyDef;
 	groundBodyDef.position.Set(0.0f, -10.0f);
 
@@ -27,6 +27,7 @@ int main() {
 	b2BodyDef bodyDef;
 	bodyDef.type = b2_dynamicBody;
 	bodyDef.position.Set(0.0f, 4.0f);
+
 	b2Body* body = world.CreateBody(&bodyDef);
 
 	b2PolygonShape dynamicBox;
